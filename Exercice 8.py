@@ -10,3 +10,5 @@ match d:
         print(n1 * n2)
     case "/":
         print(n1 / n2)
+    case _:
+        print ("opérateur invalide")

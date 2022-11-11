@@ -1,4 +1,4 @@
-z = 2
+z = 1
 p = True
 while p == True:
     n = z

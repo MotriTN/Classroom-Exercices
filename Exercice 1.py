@@ -1,9 +1,6 @@
-# Guess the number in 5 times
-# Setup
 from random import*
 N = randint(1, 30)
 i = 0
-# Code
 P = int(input("Guess a number between 1 and 30: "))
 while i < 5:
     if N == P:

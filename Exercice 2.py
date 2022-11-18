@@ -1,4 +1,3 @@
-# Second degree math equation
 from math import*
 a = int(input("Donner a : "))
 b = int(input("Donner b : "))

@@ -1,4 +1,3 @@
-# Ecrire un program qui permet de saisir un entier n et donné est ce qui il est primaire
 n = int(input("Donner un nombre pour verifier: "))
 d = 2
 premier = True

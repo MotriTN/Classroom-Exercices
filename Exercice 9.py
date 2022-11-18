@@ -1,6 +1,6 @@
-n = int(input("Donner _un nombre n :"))
+n = int(input("Donner un nombre n :"))
 s = 0
-for i in range(1, n // 2):
+for i in range(1, n):
     if (n % i) == 0:
         s = s + i
 print(s)

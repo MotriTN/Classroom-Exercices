@@ -1,6 +1,3 @@
-from re import I
-
-
 a = int(input('Donner a :'))
 b = int(input('Donner b :'))
 i = 1

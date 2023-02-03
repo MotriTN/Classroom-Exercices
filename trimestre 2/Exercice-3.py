@@ -21,7 +21,7 @@ Debut
             t<-t*10+Y mod 10
             Y<- Y mod 10
         fin tantque
-    sinon si long(str(y))<4 alors
+    sinon si long(convch(Y)<4 alors
         t<-Y*10
     sinon
         t<-Valeur(sous_chaine(ch,0,4)) + Valeur(Souschaine(ch,5,long(ch)-1))

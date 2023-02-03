@@ -29,7 +29,6 @@ Debut
     ecrire("le nombre aléatoire c'est",X)
     ecrire("le nombre obtenu c'est",t)
 fin
-
 """
 #python
 from random import randint
@@ -48,15 +47,33 @@ while not (len(str(ident)) == 8 and ("/") in da and condition == True and 1<=int
 MJ = str(J) + str(M)
 X = randint(5, 64)
 Y=X*int(MJ)
-ch=str(y)
+ch=str(Y)
 if len(str(Y))==4:
     t=0
     while Y>0:
         t=t*10+Y%10
         Y//=10
-elif len(str(y))<4:
+elif len(str(Y))<4:
     t=Y*10
 else:
     t=int(ch[:4]) + int(ch[4:])
-print(f"le nombre aléatoire c'est {x}")
+print(f"le nombre aléatoire c'est {X}")
 print(f"le nombre obtenu c'est {t}")
+#TDO
+print("Nom\tType")
+print("ident\tChaine de characters")
+print("da\tChaine de characters")
+print("index\tEntier")
+print("J\tChaine de characters")
+print("J\tChaine de characters")
+print("condition\tBooléen)")
+print("MJ\tChaine de characters")
+print("X\tEntier")
+print("Y\tEntier")
+print("ch\tChaine de characters")
+print("t\tEntier")
+
+
+
+
+

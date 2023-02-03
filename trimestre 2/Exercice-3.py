@@ -57,23 +57,26 @@ elif len(str(Y))<4:
     t=Y*10
 else:
     t=int(ch[:4]) + int(ch[4:])
-print(f"le nombre aléatoire c'est {X}")
-print(f"le nombre obtenu c'est {t}")
 #TDO
+print("***TABLEAU DE TDO***")
 print("Nom\tType")
 print("ident\tChaine de characters")
 print("da\tChaine de characters")
 print("index\tEntier")
 print("J\tChaine de characters")
 print("J\tChaine de characters")
-print("condition\tBooléen)")
+print("condition\tBooléen")
 print("MJ\tChaine de characters")
 print("X\tEntier")
 print("Y\tEntier")
 print("ch\tChaine de characters")
 print("t\tEntier")
-
-
-
-
-
+print("                                  ")
+print("↑   TABLEAU de TDO   ↑")
+print("__________________________________")
+print("                                  ")
+print("↓   LE RESULTAT   ↓")
+print("                                  ")
+#resultat
+print(f"le nombre aléatoire c'est {X}")
+print(f"le nombre obtenu c'est {t}")

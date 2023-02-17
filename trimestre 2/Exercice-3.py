@@ -22,7 +22,9 @@ Debut
             Y<- Y mod 10
         fin tantque
     sinon si long(convch(Y)<4 alors
-        t<-Y*10
+        tantque t>1000:
+            t<-Y*10
+            fin tantque
     sinon
         t<-Valeur(sous_chaine(ch,0,4)) + Valeur(Souschaine(ch,5,long(ch)-1))
     fin si
@@ -54,7 +56,8 @@ if len(str(Y)) == 4:
         t = t * 10 + Y % 10
         Y //= 10
 elif len(str(Y)) < 4:
-    t = Y * 10
+    while Y < 1000:
+        t = Y * 10
 else:
     t = int(ch[:4]) + int(ch[4:])
 # TDO

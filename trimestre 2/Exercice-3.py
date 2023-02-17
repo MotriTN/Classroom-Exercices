@@ -22,7 +22,7 @@ Debut
             Y<- Y mod 10
         fin tantque
     sinon si long(convch(Y)<4 alors
-        tantque t>1000:
+        tantque Y>1000:
             t<-Y*10
             fin tantque
     sinon

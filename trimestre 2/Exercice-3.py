@@ -1,4 +1,4 @@
-#algorithme CODE SECRET
+# algorithme CODE SECRET
 """
 Debut
     repeter
@@ -6,11 +6,11 @@ Debut
         lire(ident)
         ecrire("Donner la date de carte(J/M): ")
         lire(da)
-        index <- pos(da,"/")
-        J <- sous_chaine(da,0,index-1)
-        M <- sous_chaine(da,index,long(da)-1)
+        index <- pos("/",da)
+        J <- sous_chaine(da,0,index)
+        M <- sous_chaine(da,index,long(da))
         condition <- EstNum(ident)
-    jusqu'à (long(convch(ident)) = 8 et ("/") ∈ da et condition = Vrai et 1<=int(J)<=31 et 1<=int(M)<=12)
+    jusqu'à (long(convch(ident)) = 8 et index<>-1 et condition = Vrai et 1<=Valeur(J)<=31 et 1<=Valeur(M)<=12)
     MJ <- convch(J)+Convch(M)
     X <- aléa (5,65)
     Y <- X * Valeur(MJ)
@@ -30,7 +30,7 @@ Debut
     ecrire("le nombre obtenu c'est",t)
 fin
 """
-#python
+# python
 from random import randint
 ident = input("Donner votre ident composé de 8 chiffres digitales: ")
 da = input("Donner la date de carte(J/M): ")
@@ -38,7 +38,7 @@ index = da.index('/')
 J = da[:index]
 M = da[index + 1:]
 condition = ident.isdigit()
-while not (len(str(ident)) == 8 and ("/") in da and condition == True and 1<=int(J)<=31 and 1<=int(M)<=12):
+while not (len(str(ident)) == 8 and ("/") in da and condition == True and 1 <= int(J) <= 31 and 1 <= int(M) <= 12):
     ident = int(input("Donner votre ident composé de 8 chiffres: "))
     da = input("Donner la date de carte(J/M): ")
     index = da.index('/')
@@ -46,18 +46,18 @@ while not (len(str(ident)) == 8 and ("/") in da and condition == True and 1<=int
     M = da[index + 1:]
 MJ = str(J) + str(M)
 X = randint(5, 64)
-Y=X*int(MJ)
-ch=str(Y)
-if len(str(Y))==4:
-    t=0
-    while Y>0:
-        t=t*10+Y%10
-        Y//=10
-elif len(str(Y))<4:
-    t=Y*10
+Y = X * int(MJ)
+ch = str(Y)
+if len(str(Y)) == 4:
+    t = 0
+    while Y > 0:
+        t = t * 10 + Y % 10
+        Y //= 10
+elif len(str(Y)) < 4:
+    t = Y * 10
 else:
-    t=int(ch[:4]) + int(ch[4:])
-#TDO
+    t = int(ch[:4]) + int(ch[4:])
+# TDO
 print("***TABLEAU DE TDO***")
 print("Nom\tType")
 print("ident\tChaine de characters")
@@ -77,6 +77,6 @@ print("__________________________________")
 print("                                  ")
 print("↓   LE RESULTAT   ↓")
 print("                                  ")
-#resultat
+# resultat
 print(f"le nombre aléatoire c'est {X}")
 print(f"le nombre obtenu c'est {t}")

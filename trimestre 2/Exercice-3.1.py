@@ -12,12 +12,15 @@ while not (pg.isdecimal() == True and pd.isdecimal() == True and 31 >= int(pg) >
     pg = da[:po]
     pd = da[po + 1:]
 ch = pg + pd
-y = int(ch) * randint(5, 64)
+e = randint(5, 64)
+print(e)
+y = int(ch) * e
+print(y)
 if len(str(y)) < 4:
     while len(str(y)) < 4:
         y = str(y) + '0'
 elif len(str(y)) == 4:
     y = str(y)[::-1]
 else:
-    y = int(str(y)[:4]) + int(str(y)[5:])
+    y = int(str(y)[:4]) + int(str(y)[4:])
 print("Le Code est", y)
